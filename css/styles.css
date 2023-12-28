@@ -5,9 +5,11 @@ body{
 }
 
 .container{
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
+
 h1, h2, h3, p{
     margin: 0;
     padding: 0;
@@ -42,9 +44,9 @@ a.logo span{
 
 header{
     display: flex;
-    padding: 0 15px;
     justify-content: space-between;
     padding: 24px 0;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 header nav{
@@ -100,13 +102,19 @@ header address ul li a.contact-link:focus{
     color: #404bbf;
 }
 
+.section{
+    padding: 120px 0;
+}
 section.order-service{
+    padding: 188px 0;
     background-color: #2E2F42;
     color: #fff;
     text-align: center;
 }
 
 section.order-service h1.main-h{
+    margin: auto;
+    width: 496px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -115,9 +123,12 @@ section.order-service h1.main-h{
 
 section.order-service button.order-button{
     background-color: #4D5AE5;
+    padding: 16px 32px;
+    margin-top: 48px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
     border: none;
     color: #fff;
 }
@@ -128,6 +139,15 @@ section.order-service button.order-button:hover{
 
 section.order-service button.order-button:focus{
     background-color: #404BBF;
+}
+
+section.advantages h2{
+    display: none;
+}
+
+section.advantages ul{
+    display: flex;
+    justify-content: space-between;
 }
 
 section.advantages ul li h3.advantage-h{
@@ -141,10 +161,16 @@ section.advantages ul li h3.advantage-h{
 section.advantages ul li p.advantage-p{
     letter-spacing: 0.32px;
     line-height: 1.5;
+    width: 264px;
+    margin-top: 8px;
 }
 
 section.team{
     background-color: #F4F4FD;
+    width: 100vw;
+    transform: translateX(-50%);
+    position: relative;
+    left: 49%;
 }
 
 section.team h2.team-main-h{
@@ -155,12 +181,26 @@ section.team h2.team-main-h{
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+section.team ul{
+    display: flex;
+    justify-content: center;
 }
 
 section.team ul li{
     background: #fff;
 }
 
+section.team ul li:not(:last-child){
+    margin-right: 24px;
+}
+
+.team-item .item-text{
+    text-align: center;
+    padding: 32px 0;
+}
 section.team ul li h3.team-h{
     font-size: 20px;
     font-weight: 500;
@@ -184,14 +224,32 @@ section.portfolio h2.portfolio-main-h{
     text-transform: capitalize;
     letter-spacing: 0.72px;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
+section.portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+section.portfolio .item-text{
+    padding: 32px 0 32px 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+section.portfolio ul li:not(:nth-child(4), :nth-child(5), :nth-child(6)){
+    margin-bottom: 48px;
+}
 section.portfolio ul li h3.portfolio-h{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 section.portfolio ul li p.portfolio-p{
@@ -201,6 +259,7 @@ section.portfolio ul li p.portfolio-p{
 
 footer.page-footer{
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 footer a.logo span.footer-span{
@@ -208,7 +267,9 @@ footer a.logo span.footer-span{
 }
 
 footer p.footer-p{
+    margin-top: 17.5px;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
