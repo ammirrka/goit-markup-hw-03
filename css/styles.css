@@ -4,8 +4,18 @@ body{
     color: #434455;
 }
 
+.container{
+    width: 1158px;
+    margin: 0 auto;
+}
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
 ul, ol{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -30,11 +40,29 @@ a.logo span{
     color: #2e2f42;
 }
 
+header{
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav ul{
+    display: flex;
+    margin-left: 76px;
+    /* margin-right: 332px; */
+}
+
 header nav ul li a.nav-a{
     font-weight: 500;
     color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 header nav ul li a.nav-a:hover{
@@ -48,6 +76,14 @@ header nav ul li a.nav-a:focus{
 
 address.addresses{
     font-style: normal;
+}
+
+header address ul{
+    display: flex;
+}
+
+header address ul li:not(:last-child){
+    margin-right: 40px;
 }
 
 header address ul li a.contact-link{
