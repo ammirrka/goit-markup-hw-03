@@ -56,7 +56,6 @@ header nav{
 header nav ul{
     display: flex;
     margin-left: 76px;
-    /* margin-right: 332px; */
 }
 
 header nav ul li a.nav-a{
