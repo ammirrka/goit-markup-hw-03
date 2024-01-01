@@ -4,6 +4,10 @@ body{
     color: #434455;
 }
 
+img{
+    display: block;
+}
+
 .container{
     max-width: 1158px;
     margin: 0 auto;
@@ -42,35 +46,43 @@ a.logo span{
     color: #2e2f42;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0;
+.header{
     border-bottom: 1px solid #E7E9FC;
 }
 
-header nav{
+.page-header{
     display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
 }
 
-header nav ul{
+.header .page-nav{
     display: flex;
+    align-items: center;
+}
+
+.header .page-nav .nav-list{
+    display: flex;
+    gap: 40px;
+}
+
+.header .page-nav a.logo{
     margin-left: 76px;
 }
 
-header nav ul li a.nav-a{
+.header .page-nav .nav-list li a.nav-a{
     font-weight: 500;
     color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-right: 40px;
+    padding: 24px 0;
 }
 
-header nav ul li a.nav-a:hover{
+.header .page-nav .nav-list li a.nav-a:hover{
     color: #404BBF;
 }
 
-header nav ul li a.nav-a:focus{
+.header .page-nav .nav-list li a.nav-a:focus{
     text-decoration: underline;
     color: #404BBF;
 }
@@ -79,8 +91,9 @@ address.addresses{
     font-style: normal;
 }
 
-header address ul{
+.header .addresses-list{
     display: flex;
+    gap: 40px;
 }
 
 header address ul li:not(:last-child){
