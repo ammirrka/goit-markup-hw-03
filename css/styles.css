@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     color: #434455;
@@ -17,35 +17,40 @@ body{
     overflow: hidden;
 }
 
-img{
+img {
     display: block;
 }
 
-.container{
+.container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
-ul, ol{
+
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-a.logo{
+a.logo {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
@@ -55,34 +60,34 @@ a.logo{
     letter-spacing: 0.54px;
 }
 
-a.logo span{
+a.logo span {
     color: #2e2f42;
 }
 
-.header{
+.header {
     border-bottom: 1px solid #E7E9FC;
 }
 
-.page-header{
+.page-header {
     display: flex;
     justify-content: space-between;
 }
 
-.header .page-nav{
+.header .page-nav {
     display: flex;
     align-items: center;
 }
 
-.header .page-nav .nav-list{
+.header .page-nav .nav-list {
     display: flex;
     gap: 40px;
 }
 
-.header .page-nav a.logo{
+.header .page-nav a.logo {
     margin-right: 76px;
 }
 
-.header .page-nav .nav-list li a.nav-a{
+.header .page-nav .nav-list li a.nav-a {
     font-weight: 500;
     color: #2E2F42;
     line-height: 1.5;
@@ -91,29 +96,29 @@ a.logo span{
     padding: 24px 0;
 }
 
-.header .page-nav .nav-list li a.nav-a:hover{
+.header .page-nav .nav-list li a.nav-a:hover {
     color: #404BBF;
 }
 
-.header .page-nav .nav-list li a.nav-a:focus{
+.header .page-nav .nav-list li a.nav-a:focus {
     text-decoration: underline;
     color: #404BBF;
 }
 
-address.addresses{
+address.addresses {
     font-style: normal;
 }
 
-.header .addresses-list{
+.header .addresses-list {
     display: flex;
     gap: 40px;
 }
 
-header address ul li:not(:last-child){
+header address ul li:not(:last-child) {
     margin-right: 40px;
 }
 
-header address ul li a.contact-link{
+header address ul li a.contact-link {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -121,24 +126,25 @@ header address ul li a.contact-link{
     padding: 24px 0;
 }
 
-header address ul li a.contact-link:hover{
+header address ul li a.contact-link:hover {
     color: #404BBF;
 }
 
-header address ul li a.contact-link:focus{
+header address ul li a.contact-link:focus {
     color: #404bbf;
 }
 
-.section{
+.section {
     padding: 120px 0;
 }
-section.order-service{
+
+section.order-service {
     padding: 188px 0;
     background-color: #2E2F42;
     color: #fff;
 }
 
-section.order-service h1.main-h{
+section.order-service h1.main-h {
     margin: auto;
     max-width: 496px;
     font-size: 56px;
@@ -147,7 +153,7 @@ section.order-service h1.main-h{
     letter-spacing: 1.12px;
 }
 
-section.order-service button.order-button{
+section.order-service button.order-button {
     min-width: 169px;
     height: 56px;
     display: block;
@@ -163,21 +169,25 @@ section.order-service button.order-button{
     cursor: pointer;
 }
 
-section.order-service button.order-button:hover{
+section.order-service button.order-button:hover {
     background-color: #404BBF;
 }
 
-section.order-service button.order-button:focus{
+section.order-service button.order-button:focus {
     background-color: #404BBF;
 }
 
-section.advantages ul.advantages-list{
+section.advantages ul.advantages-list {
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-section.advantages ul.advantages-list li h3.advantage-h{
+section.advantages ul.advantages-list li {
+    width: calc((100% - 72px) / 4);
+}
+
+section.advantages ul.advantages-list li h3.advantage-h {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -186,13 +196,13 @@ section.advantages ul.advantages-list li h3.advantage-h{
     margin-bottom: 8px;
 }
 
-section.advantages ul.advantages-list li p.advantage-p{
+section.advantages ul.advantages-list li p.advantage-p {
     letter-spacing: 0.32px;
     line-height: 1.5;
     width: 264px;
 }
 
-section.team{
+section.team {
     background-color: #F4F4FD;
     width: 100vw;
     transform: translateX(-50%);
@@ -200,7 +210,7 @@ section.team{
     left: 49%;
 }
 
-section.team h2.team-main-h{
+section.team h2.team-main-h {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -211,26 +221,31 @@ section.team h2.team-main-h{
     margin-bottom: 72px;
 }
 
-section.team ul{
+section.team ul {
     display: flex;
     justify-content: center;
 }
 
-section.team ul li.team-item{
+section.team ul li.team-item {
     background: #fff;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
 }
 
-section.team ul li:not(:last-child){
+section.team ul li.team-item img {
+    max-width: 100%;
+}
+
+section.team ul li:not(:last-child) {
     margin-right: 24px;
 }
 
-.team-item .item-text{
+.team-item .item-text {
     text-align: center;
     padding: 32px 0;
 }
-section.team ul li h3.team-h{
+
+section.team ul li h3.team-h {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -239,13 +254,13 @@ section.team ul li h3.team-h{
     margin-bottom: 8px;
 }
 
-section.team ul li p.team-p{
+section.team ul li p.team-p {
     font-size: 16px;
     letter-spacing: 0.32px;
     line-height: 1.5;
 }
 
-section.portfolio h2.portfolio-main-h{
+section.portfolio h2.portfolio-main-h {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -257,21 +272,30 @@ section.portfolio h2.portfolio-main-h{
     margin-bottom: 72px;
 }
 
-section.portfolio ul.portfolio-list{
+section.portfolio ul.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
 
-section.portfolio .item-text{
+section.portfolio .portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+section.portfolio .portfolio-list-item img {
+    max-width: 100%;
+}
+
+section.portfolio .item-text {
+    /* box-sizing: border-box; */
     padding: 32px 16px;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
 }
 
-section.portfolio ul li h3.portfolio-h{
+section.portfolio ul li h3.portfolio-h {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -280,26 +304,26 @@ section.portfolio ul li h3.portfolio-h{
     margin-bottom: 8px;
 }
 
-section.portfolio ul li p.portfolio-p{
+section.portfolio ul li p.portfolio-p {
     letter-spacing: 0.32px;
     line-height: 1.5;
 }
 
-footer.page-footer{
+footer.page-footer {
     background-color: #2E2F42;
     padding: 100px 0;
 }
 
-.page-footer a.logo{
+.page-footer a.logo {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-footer a.logo span.footer-span{
+footer a.logo span.footer-span {
     color: #f4f4fd;
 }
 
-footer p.footer-p{
+footer p.footer-p {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
